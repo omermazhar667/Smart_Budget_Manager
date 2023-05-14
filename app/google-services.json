@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029163446520",
+    "project_id": "smart-budget-planner-2be53",
+    "storage_bucket": "smart-budget-planner-2be53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029163446520:android:3b7d1057af9b36a4578b0d",
+        "android_client_info": {
+          "package_name": "com.testing.smartbudgetmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029163446520-q6rt2s5u0a2958cpdngokmaim8ni1tql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8HpXrkSxKXV_oEgG3hKzi-xMQT-qpsIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029163446520-q6rt2s5u0a2958cpdngokmaim8ni1tql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

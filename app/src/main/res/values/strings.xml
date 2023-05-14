@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Smart Budget Manager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_income_credit">Total Income (Credit)</string>
+    <string name="rs_10000">Rs 10000</string>
+    <string name="total_expense_debit">Total Expense (Debit)</string>
+    <string name="amount">Amount</string>
+    <string name="describe_here">Describe here</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="your_web_client_id">1029163446520-q6rt2s5u0a2958cpdngokmaim8ni1tql.apps.googleusercontent.com</string>
+    <string name="rs_00_00">Rs 00.00</string>
+</resources>
