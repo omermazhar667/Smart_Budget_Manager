@@ -32,6 +32,7 @@ import com.testing.smartbudgetmanager.models.DailyBudgetModel;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -45,7 +46,7 @@ public class MonthlyFragment extends Fragment {
     private FirebaseAuth mAuth;
     private MonthlyDataAdapter monthlyDataAdapter;
     private List<DailyBudgetModel> tempList = new ArrayList<>();
-    private List<DailyBudgetModel> tempListTwo = new ArrayList<>();
+    private HashSet<DailyBudgetModel> tempListTwo = new HashSet<>();
     private List<DailyBudgetModel> incomeList = new ArrayList<>();
     private List<DailyBudgetModel> expenseList = new ArrayList<>();
     private int totalIncome = 0;
@@ -124,15 +125,21 @@ public class MonthlyFragment extends Fragment {
                     tempList.add(data);
 
                 }
-                for (DailyBudgetModel dailyBudgetModel : tempList) {
-                    for (DailyBudgetModel dailyBudgetModel1 : tempListTwo) {
-                        if (!dailyBudgetModel1.getDate().equals(dailyBudgetModel.getDate())) {
-                            tempListTwo.add(dailyBudgetModel);
-                        }
-
-                    }
-
-                }
+                 tempListTwo = new HashSet<>(tempList);
+//                for (DailyBudgetModel dailyBudgetModel : tempList) {
+//                    if(tempListTwo.isEmpty()){
+//                        tempListTwo.add(dailyBudgetModel);
+//                    }else {
+//                        for (DailyBudgetModel dailyBudgetModel1 : tempListTwo) {
+//                            if (!dailyBudgetModel1.getDate().equals(dailyBudgetModel.getDate())) {
+//                                tempListTwo.add(dailyBudgetModel);
+//                            }
+//
+//                        }
+//                    }
+//
+//
+//                }
 
                 for (int i = 0; i <= tempList.size() - 1; i++) {
                     DailyBudgetModel dailyBudgetModel = tempList.get(i);

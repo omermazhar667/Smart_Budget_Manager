@@ -14,16 +14,17 @@ import com.testing.smartbudgetmanager.models.DailyBudgetModel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 public class MonthlyDataAdapter extends RecyclerView.Adapter<MonthlyDataAdapter.ViewHolder> {
      public List<DailyBudgetModel> data;
-     public List<DailyBudgetModel> data2;
+     public HashSet<DailyBudgetModel> data2;
 
 
-    public MonthlyDataAdapter(List<DailyBudgetModel> data,List<DailyBudgetModel> data2) {
+    public MonthlyDataAdapter(List<DailyBudgetModel> data, HashSet<DailyBudgetModel> data2) {
         this.data = data;
-        this.data2 = data;
+        this.data2 = data2;
     }
 
     @Override
